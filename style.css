@@ -153,21 +153,23 @@ body {
         @media screen and (max-width: 768px) {
             min-width: 170px;
         }
+
         @media screen and (max-width: 576px) {
             min-width: inherit;
-            width: 100px; 
+            width: 250px; 
             max-width: 350px;           
         }
+
         @media screen and (min-width: 576px) {
              &:hover {
                 transform: translateY(-5px);
              }           
         }
         button {
-            font-size: bold;
+            font-weight: bold;
             font-size: 18px;
             padding: 15px;
-            min-width: 250px;
+            width: 250px;
             border-radius: 50px;
             text-align: center;
             color: white;
