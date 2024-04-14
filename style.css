@@ -156,7 +156,7 @@ body {
 
         @media screen and (max-width: 576px) {
             min-width: inherit;
-            width: 150px; 
+            width: 250px; 
             max-width: 350px;           
         }
 
@@ -169,7 +169,7 @@ body {
             font-weight: bold;
             font-size: 18px;
             padding: 15px;
-            width: 150px;
+            width: 250px;
             border-radius: 50px;
             text-align: center;
             color: white;
