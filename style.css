@@ -32,7 +32,7 @@ body {
     border-radius: 50px;
     width: 640px;
     position: relative;
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
     border: 2px solid #ffffff40;
     padding: 3rem 5rem;
     display: flex;
