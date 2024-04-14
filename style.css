@@ -128,18 +128,13 @@ body {
                 transform: scale(1.2) translateY(-5px);
             }            
         }
-
-        &.facebook {
-            background: linear-gradient(45deg, #3b5998, #0078d7);
-        }
-        &.instagram {
-            background: linear-gradient(45deg, #405de6, #5851de, #833ab4, #c13584, #e1306c, #fd1d1d);
-        }
-        &.linkedin {
-            background: #0a66c2;
-        }
+    
         &.github {
             background: linear-gradient(45deg, #333333, #626b73);   
+        }
+
+        &.linkedin {
+            background: #0a66c2;
         }
     }
 }
