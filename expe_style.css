@@ -72,16 +72,16 @@ body {
         gap: 50px;
         
     
-        & > *:first-child {
+        & > *:nth-child(1) {
             font-weight: bold;
-            display: flex;
+            width: 150px;
             letter-spacing: 3px;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-top: 15px;
             margin-bottom: 15px;
         }
 
-        & > *:last-child {
+        & > *:nth-child(2) {
             display: flex;
             justify-content: center; /* Vertikal zentrieren */
             align-items: center; /* Horizontal zentrieren */
