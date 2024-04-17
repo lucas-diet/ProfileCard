@@ -138,7 +138,7 @@ body {
         }
 
         &.education {
-            background: linear-gradient(45deg, #a6ba00, #014fa4);
+            background: linear-gradient(45deg, #014fa4, #a6ba00);
         }
     }
 }

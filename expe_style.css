@@ -74,7 +74,7 @@ body {
     
         & > *:nth-child(1) {
             font-weight: bold;
-            width: 150px;
+            width: 100px;
             letter-spacing: 3px;
             font-size: 1.2rem;
             margin-top: 15px;
@@ -83,6 +83,7 @@ body {
 
         & > *:nth-child(2) {
             display: flex;
+            width: 100%;
             justify-content: center; /* Vertikal zentrieren */
             align-items: center; /* Horizontal zentrieren */
             font-size: 1rem;

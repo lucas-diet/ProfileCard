@@ -83,6 +83,7 @@ body {
 
         & > *:last-child {
             display: flex;
+            width: 100%;
             justify-content: center; /* Vertikal zentrieren */
             align-items: center; /* Horizontal zentrieren */
             font-size: 1.2rem;
