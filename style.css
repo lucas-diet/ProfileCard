@@ -175,6 +175,7 @@ body {
             padding: 15px;
             width: 250px;
             border-radius: 50px;
+            border: none;
             text-align: center;
             color: white;
             cursor: pointer;
