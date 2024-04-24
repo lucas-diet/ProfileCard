@@ -73,7 +73,7 @@ body {
 .profile-card__info {
     display: flex;
     justify-content: center;
-    /*gap: 50px;*/
+    gap: 50px;
 
     @media screen and (max-width: 576px){
         gap: 30px; 
