@@ -194,3 +194,25 @@ body {
 
     }
 }
+
+.translateButton {
+    position: fixed;
+    font-size: 12px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: linear-gradient(45deg, #1da1f2, #0e71c8);
+        transform: translateY(-5px); /* Moves the button 5px up */
+    }
+}
