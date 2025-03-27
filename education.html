@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bildungsweg</title>
     <link rel="stylesheet" href="educ_style.css">
-    <script src="translate.js" defer></script>
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <!-- <button class="translateButton" id="translate">En</button> -->
+    <button class="translateButton" id="translate"></button>
+
     <div class="education-card">
         <div class="education-card__desc">
-            <h1>Bildungsweg</h1>
+            <h1 id="educ">Bildungsweg</h1>
         </div>
         <div class="education__info">
             <div>
@@ -19,18 +20,19 @@
                 <div id="mr">Mittlere Reife</div>
             </div>
             <div>
-                <div>07.2016</div>
-                <div>Allgemeine Hochschulreife</div>
+                <div id="ahDate">07.2016</div>
+                <div id="ah">Allgemeine Hochschulreife</div>
             </div>
             <div>
-                <div>03.2022</div>
-                <div>B. Sc. in Bioinformatik</div>
+                <div id="bscDate">03.2022</div>
+                <div id="bsc">B. Sc. in Bioinformatik</div>
             </div>
             <div>
-                <div style="width: 200px; font-size: 0.9rem;">*in arbeit*</div>
-                <div>M. Sc. in Bioinformatik</div>
+                <div id="mscDate">03.2025</div>
+                <div id="msc">M. Sc. in Bioinformatik</div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -6,10 +6,10 @@
     <title>Profil</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <script src="translate.js" defer></script>
 </head>
 <body>
-    <!--<button class="translateButton" id="translate">En</button> -->
+    <button class="translateButton" id="translate"></button>
+
     <div class="profile-card">
         <figure class="profile-card__img">
             <img src="bild.webp"  alt="...">
@@ -68,12 +68,13 @@
         </div>
         <div class="profile-card__actions">
             <a href="mailto:lucas-d97@web.de">
-                <button class="mail">Email</button>
+                <button class="mail", id="contact">E-mail</button>
             </a>
             <a href="experience.html" rel="noopener noreferrer">
-                <button class="experience">Berufe</button>
+                <button class="experience" id="exp">Berufe</button>
             </a>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

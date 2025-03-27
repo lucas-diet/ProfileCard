@@ -76,7 +76,7 @@ body {
             font-weight: bold;
             display: flex;
             letter-spacing: 3px;
-            font-size: 2rem;
+            font-size: 1.2rem;
             margin-top: 15px;
             margin-bottom: 15px;
         }
@@ -94,22 +94,20 @@ body {
 
 .translateButton {
     position: fixed;
-    font-size: 12px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     top: 10px;
     right: 10px;
-    padding: 10px;
-    background: linear-gradient(45deg, #1da1f2, #0e71c8);
-    box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
-    color: white;
+    width: 35px; /* Größe des Buttons */
+    height: 35px; /* Größe des Buttons */
+    padding: 0;
+    background: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg') no-repeat center center / cover; /* Standard-US-Flagge */
+    background-position: 0px center; /* Verschiebung der Flagge nach rechts */
     border: none;
-    text-align: center;
-    border-radius: 50px;
+    border-radius: 50%; /* Runde Form */
     cursor: pointer;
+    box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
     transition: all 0.2s;
+}
 
-    &:hover {
-        background-color: linear-gradient(45deg, #1da1f2, #0e71c8);
-        transform: translateY(-5px); /* Moves the button 5px up */
-    }
+.translateButton:hover {
+    transform: translateY(-5px);
 }
