@@ -42,7 +42,7 @@ function changeLanguage() {
     // Prüfe, ob die aktuelle Sprache Englisch ist
     const isEnglish = translateButton.style.backgroundImage.includes('Flag_of_the_United_States.svg');
 
-    if (window.location.pathname === '/index.html') {
+    if (window.location.pathname.includes('index.html')) {
         if (placeElement) {
             placeElement.textContent = isEnglish ? 'Jena, Germany' : 'Jena, Deutschland';
         }
@@ -56,7 +56,7 @@ function changeLanguage() {
             contactBtn.textContent = isEnglish ? 'E-Mail' : 'E-Mail';
         }
     } 
-    else if (window.location.pathname === '/education.html') {
+    else if (window.location.pathname.includes('education.html')) {
         if (educElement) {
             educElement.textContent = isEnglish ? 'Education' : 'Bildungsweg';
         }
@@ -85,7 +85,7 @@ function changeLanguage() {
             msc.textContent = isEnglish ? 'M. Sc in Bioinformatics' : 'M. Sc. in Bioinformatik'
         }
     }
-    else if (window.location.pathname === '/experience.html') {
+    else if (window.location.pathname.includes('/experience.html')) {
         if (expElement) {
             expElement.textContent = isEnglish ? 'Work Experience' : 'Beruflicher Werdegang';
         }
