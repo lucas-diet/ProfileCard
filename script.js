@@ -42,7 +42,7 @@ function changeLanguage() {
     // Prüfe, ob die aktuelle Sprache Englisch ist
     const isEnglish = translateButton.style.backgroundImage.includes('Flag_of_the_United_States.svg');
 
-    if (window.location.pathname.includes('index.html')) {
+    if (window.location.pathname === "/" || window.location.pathname.includes("index.html")) {
         if (placeElement) {
             placeElement.textContent = isEnglish ? 'Jena, Germany' : 'Jena, Deutschland';
         }
