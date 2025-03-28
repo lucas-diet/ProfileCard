@@ -53,7 +53,7 @@ function changeLanguage() {
             experienceBtn.textContent = isEnglish ? 'Work Experience' : 'Berufe';
         }
         if (contactBtn) {
-            contactBtn.textContent = isEnglish ? 'E-Mail' : 'E-Mail';
+            contactBtn.textContent = isEnglish ? 'EMail' : 'E-Mail';
         }
     } 
     else if (window.location.pathname.includes('education.html')) {
