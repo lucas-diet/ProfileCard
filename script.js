@@ -23,7 +23,7 @@ function applyLanguage() {
 
     const translations = {
         "place": isEnglish ? "Jena, Germany" : "Jena, Deutschland",
-        "currentTitle": isEnglish ? "Bioinformatics student" : "Student der Bioinformatik",
+        "currentTitle": isEnglish ? "Bioinformatics M. Sc." : "Bioinformatik M. Sc.",
         "exp": isEnglish ? "Work Experience" : "Berufe",
         "contact": isEnglish ? "Email" : "E-Mail",
         "educ": isEnglish ? "Education" : "Bildungsweg",
