@@ -35,68 +35,42 @@ function changeLanguage() {
     const msc = document.getElementById("msc")
 
     const expElement = document.getElementById("workLine");
-
     const jobSpan1 = document.getElementById("jobSpan1")
     const jobTitle1 = document.getElementById("jobTitle1");
 
-    // Prüfe, ob die aktuelle Sprache Englisch ist
-    const isEnglish = translateButton.style.backgroundImage.includes("Flag_of_the_United_States.svg");
+    // Prüfe aktuelle Sprache
+    const currentLang = localStorage.getItem("language") || "de"; // Standardmäßig Deutsch
+    const newLang = currentLang === "de" ? "en" : "de";
+
+    // Sprache speichern
+    localStorage.setItem("language", newLang);
+
+    // Inhalte anpassen
+    const isEnglish = newLang === "en";
 
     if (window.location.pathname === "/" || window.location.pathname.includes("index.html")) {
-        if (placeElement) {
-            placeElement.textContent = isEnglish ? "Jena, Germany" : "Jena, Deutschland";
-        }
-        if (stateTitle) {
-            stateTitle.textContent = isEnglish ? "Bioinformatics student" : "Student der Bioinformatik";
-        }
-        if (experienceBtn) {
-            experienceBtn.textContent = isEnglish ? "Work Experience" : "Berufe";
-        }
-        if (contactBtn) {
-            contactBtn.textContent = isEnglish ? "EMail" : "E-Mail";
-        }
+        if (placeElement) placeElement.textContent = isEnglish ? "Jena, Germany" : "Jena, Deutschland";
+        if (stateTitle) stateTitle.textContent = isEnglish ? "Bioinformatics student" : "Student der Bioinformatik";
+        if (experienceBtn) experienceBtn.textContent = isEnglish ? "Work Experience" : "Berufe";
+        if (contactBtn) contactBtn.textContent = isEnglish ? "EMail" : "E-Mail";
     } 
     else if (window.location.pathname.includes('education.html')) {
-        if (educElement) {
-            educElement.textContent = isEnglish ? "Education" : "Bildungsweg";
-        }
-        if (mrDate) {
-            mrDate.textContent = isEnglish ? "Jul/2015" : "07.2015";
-        }
-        if (mr) {
-            mr.textContent = isEnglish ? "Secondary school diploma" : "Mittlere Reife";
-        }
-        if (ahDate) {
-            ahDate.textContent = isEnglish ? "Jul/2016" : "07.2016";
-        }
-        if (ah) {
-            ah.textContent = isEnglish ? "High School Diploma" : "Allgemeine Hochschulreife";
-        }
-        if (bscDate) {
-            bscDate.textContent = isEnglish ? "Mar/2022" : "03.2022";
-        }
-        if (bsc) {
-            bsc.textContent = isEnglish ? "B. Sc. in Bioinformatics" : "B. Sc. in Bioinformatk";
-        }
-        if (mscDate) {
-            mscDate.textContent = isEnglish ? "Mar/2025" : "03.2025";
-        }
-        if (msc) {
-            msc.textContent = isEnglish ? "M. Sc in Bioinformatics" : "M. Sc. in Bioinformatik";
-        }
+        if (educElement) educElement.textContent = isEnglish ? "Education" : "Bildungsweg";
+        if (mrDate) mrDate.textContent = isEnglish ? "Jul/2015" : "07.2015";
+        if (mr) mr.textContent = isEnglish ? "Secondary school diploma" : "Mittlere Reife";
+        if (ahDate) ahDate.textContent = isEnglish ? "Jul/2016" : "07.2016";
+        if (ah) ah.textContent = isEnglish ? "High School Diploma" : "Allgemeine Hochschulreife";
+        if (bscDate) bscDate.textContent = isEnglish ? "Mar/2022" : "03.2022";
+        if (bsc) bsc.textContent = isEnglish ? "B. Sc. in Bioinformatics" : "B. Sc. in Bioinformatk";
+        if (mscDate) mscDate.textContent = isEnglish ? "Mar/2025" : "03.2025";
+        if (msc) msc.textContent = isEnglish ? "M. Sc in Bioinformatics" : "M. Sc. in Bioinformatik";
     }
     else if (window.location.pathname.includes("experience.html")) {
-        if (expElement) {
-            expElement.textContent = isEnglish ? "Work Experience" : "Beruflicher Werdegang";
-        }
-        if (jobSpan1) {
-            jobSpan1.textContent = isEnglish ? "Oct/2019 - Jul/2020" : "10.2019 - 07.2020";
-        }
-        if (jobTitle1) {
-            jobTitle1.innerHTML = isEnglish 
-                ? "Student Assistant at the Competence & Service Center <br> Friedrich-Schiller-University Jena"
-                : "Studentische Hilfskraft im Kompetenz- & Servicezentrum <br> Friedrich-Schiller-Universität Jena";
-        }
+        if (expElement) expElement.textContent = isEnglish ? "Work Experience" : "Beruflicher Werdegang";
+        if (jobSpan1) jobSpan1.textContent = isEnglish ? "Oct/2019 - Jul/2020" : "10.2019 - 07.2020";
+        if (jobTitle1) jobTitle1.innerHTML = isEnglish 
+            ? "Student Assistant at the Competence & Service Center <br> Friedrich-Schiller-University Jena"
+            : "Studentische Hilfskraft im Kompetenz- & Servicezentrum <br> Friedrich-Schiller-Universität Jena";
     }
 
     // Flagge ändern
@@ -107,8 +81,12 @@ function changeLanguage() {
     }
 }
 
-// Event Listener für den Button
+// Sprache beim Laden der Seite anwenden
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('translate').addEventListener('click', changeLanguage);
-});
 
+    // Stelle sicher, dass die gespeicherte Sprache angewendet wird
+    if (localStorage.getItem("language") === "en") {
+        changeLanguage();
+    }
+});
