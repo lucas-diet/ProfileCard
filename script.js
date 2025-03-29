@@ -25,7 +25,7 @@ function applyLanguage() {
         "place": isEnglish ? "Jena, Germany" : "Jena, Deutschland",
         "currentTitle": isEnglish ? "Bioinformatics student" : "Student der Bioinformatik",
         "exp": isEnglish ? "Work Experience" : "Berufe",
-        "contact": isEnglish ? "E-Mail" : "E-Mail",
+        "contact": isEnglish ? "Email" : "E-Mail",
         "educ": isEnglish ? "Education" : "Bildungsweg",
         "mrDate": isEnglish ? "Jul/2015" : "07.2015",
         "mr": isEnglish ? "Secondary school diploma" : "Mittlere Reife",
