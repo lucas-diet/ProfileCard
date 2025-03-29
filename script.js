@@ -17,7 +17,7 @@ function currentDate() {
 
 
 
-function changeLanguage() {
+function applyLanguage(lang) {
     const placeElement = document.getElementById("place");
     const stateTitle = document.getElementById("currentTitle");
     const translateButton = document.getElementById("translate");
@@ -25,34 +25,26 @@ function changeLanguage() {
     const contactBtn = document.getElementById("contact");
 
     const educElement = document.getElementById("educ");
-    const mrDate = document.getElementById("mrDate")
-    const mr = document.getElementById("mr")
-    const ahDate = document.getElementById("ahDate")
-    const ah = document.getElementById("ah")
-    const bscDate = document.getElementById("bscDate")
-    const bsc = document.getElementById("bsc")
-    const mscDate = document.getElementById("mscDate")
-    const msc = document.getElementById("msc")
+    const mrDate = document.getElementById("mrDate");
+    const mr = document.getElementById("mr");
+    const ahDate = document.getElementById("ahDate");
+    const ah = document.getElementById("ah");
+    const bscDate = document.getElementById("bscDate");
+    const bsc = document.getElementById("bsc");
+    const mscDate = document.getElementById("mscDate");
+    const msc = document.getElementById("msc");
 
     const expElement = document.getElementById("workLine");
-    const jobSpan1 = document.getElementById("jobSpan1")
+    const jobSpan1 = document.getElementById("jobSpan1");
     const jobTitle1 = document.getElementById("jobTitle1");
 
-    // Prüfe aktuelle Sprache
-    const currentLang = localStorage.getItem("language") || "de"; // Standardmäßig Deutsch
-    const newLang = currentLang === "de" ? "en" : "de";
-
-    // Sprache speichern
-    localStorage.setItem("language", newLang);
-
-    // Inhalte anpassen
-    const isEnglish = newLang === "en";
+    const isEnglish = lang === "en";
 
     if (window.location.pathname === "/" || window.location.pathname.includes("index.html")) {
         if (placeElement) placeElement.textContent = isEnglish ? "Jena, Germany" : "Jena, Deutschland";
         if (stateTitle) stateTitle.textContent = isEnglish ? "Bioinformatics student" : "Student der Bioinformatik";
         if (experienceBtn) experienceBtn.textContent = isEnglish ? "Work Experience" : "Berufe";
-        if (contactBtn) contactBtn.textContent = isEnglish ? "EMail" : "E-Mail";
+        if (contactBtn) contactBtn.textContent = isEnglish ? "Email" : "E-Mail";
     } 
     else if (window.location.pathname.includes('education.html')) {
         if (educElement) educElement.textContent = isEnglish ? "Education" : "Bildungsweg";
@@ -61,7 +53,7 @@ function changeLanguage() {
         if (ahDate) ahDate.textContent = isEnglish ? "Jul/2016" : "07.2016";
         if (ah) ah.textContent = isEnglish ? "High School Diploma" : "Allgemeine Hochschulreife";
         if (bscDate) bscDate.textContent = isEnglish ? "Mar/2022" : "03.2022";
-        if (bsc) bsc.textContent = isEnglish ? "B. Sc. in Bioinformatics" : "B. Sc. in Bioinformatk";
+        if (bsc) bsc.textContent = isEnglish ? "B. Sc. in Bioinformatics" : "B. Sc. in Bioinformatik";
         if (mscDate) mscDate.textContent = isEnglish ? "Mar/2025" : "03.2025";
         if (msc) msc.textContent = isEnglish ? "M. Sc in Bioinformatics" : "M. Sc. in Bioinformatik";
     }
@@ -81,12 +73,22 @@ function changeLanguage() {
     }
 }
 
-// Sprache beim Laden der Seite anwenden
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('translate').addEventListener('click', changeLanguage);
+function changeLanguage() {
+    const currentLang = localStorage.getItem("language") || "de"; // Standard: Deutsch
+    const newLang = currentLang === "de" ? "en" : "de";
 
-    // Stelle sicher, dass die gespeicherte Sprache angewendet wird
-    if (localStorage.getItem("language") === "en") {
-        changeLanguage();
-    }
+    // Speichere neue Sprache
+    localStorage.setItem("language", newLang);
+
+    // Wende Sprache an
+    applyLanguage(newLang);
+}
+
+// Beim Laden der Seite gespeicherte Sprache anwenden
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem("language") || "de";
+    applyLanguage(savedLang);
+
+    // Event Listener für den Button
+    document.getElementById('translate').addEventListener('click', changeLanguage);
 });
