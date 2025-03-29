@@ -74,7 +74,6 @@ body {
         
         & > *:nth-child(1) {
             font-weight: bold;
-            width: 120px;
             letter-spacing: 3px;
             font-size: 0.8rem;
             margin-top: 15px;
