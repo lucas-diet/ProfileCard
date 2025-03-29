@@ -22,6 +22,8 @@ function applyLanguage() {
     const isEnglish = currentLang === "en";
 
     const translations = {
+        "translate": isEnglish ? "De" : "En",
+
         "place": isEnglish ? "Jena, Germany" : "Jena, Deutschland",
         "currentTitle": isEnglish ? "Bioinformatics M. Sc." : "Bioinformatik M. Sc.",
         "exp": isEnglish ? "Work Experience" : "Berufe",
@@ -58,12 +60,12 @@ function applyLanguage() {
     });
 
     // Flaggen-Bild anpassen
-    const translateButton = document.getElementById("translate");
-    if (translateButton) {
-        translateButton.style.backgroundImage = isEnglish 
-            ? "url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg')" 
-            : "url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg')";
-    }
+    //const translateButton = document.getElementById("translate");
+    //if (translateButton) {
+    //    translateButton.style.backgroundImage = isEnglish 
+    //        ? "url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg')" 
+    //        : "url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg')";
+    //}
 }
 
 function changeLanguage() {
