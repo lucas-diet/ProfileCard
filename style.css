@@ -140,6 +140,9 @@ body {
         &.education {
             background: linear-gradient(45deg, #014fa4, #a6ba00);
         }
+        &.thesis {
+            background: linear-gradient(45deg, #444444, #111111); 
+        }
     }
 }
 

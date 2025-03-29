@@ -26,6 +26,7 @@ function applyLanguage() {
         "currentTitle": isEnglish ? "Bioinformatics M. Sc." : "Bioinformatik M. Sc.",
         "exp": isEnglish ? "Work Experience" : "Berufe",
         "contact": isEnglish ? "Email" : "E-Mail",
+
         "educ": isEnglish ? "Education" : "Bildungsweg",
         "mrDate": isEnglish ? "Jul/2015" : "07.2015",
         "mr": isEnglish ? "Secondary school diploma" : "Mittlere Reife",
@@ -35,6 +36,12 @@ function applyLanguage() {
         "bsc": isEnglish ? "B. Sc. in Bioinformatics" : "B. Sc. in Bioinformatk",
         "mscDate": isEnglish ? "Mar/2025" : "03.2025",
         "msc": isEnglish ? "M. Sc in Bioinformatics" : "M. Sc. in Bioinformatik",
+        
+        "thesis": isEnglish ? "Theses" : "Abschlussarbeiten",
+        "ba": isEnglish ? "Bachelor thesis": "Bachelorarbeit",
+        "pa": isEnglish ? "Project work" : "Projektarbeit",
+        "ma": isEnglish ? "Master thesis": "Masterarbeit",
+
         "workLine": isEnglish ? "Work Experience" : "Beruflicher Werdegang",
         "jobSpan1": isEnglish ? "Oct/2019 - Jul/2020" : "10.2019 - 07.2020",
         "jobTitle1": isEnglish 
