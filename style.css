@@ -199,6 +199,7 @@ body {
 
 .translateButton {
     position: fixed;
+    z-index: 9999;
     top: 10px;
     right: 10px;
     width: 35px; /* Größe des Buttons */
