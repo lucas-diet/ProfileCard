@@ -118,3 +118,31 @@ body {
 .translateButton:hover {
     transform: translateY(-5px);
 }
+
+.backButton {
+    position: fixed;
+    z-index: 9999;
+    top: 10px;
+    right: 55px;
+    width: 35px; /* Größe des Buttons */
+    height: 35px; /* Größe des Buttons */
+    padding: 0;
+    /*background: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg') no-repeat center center / cover;  Standard-US-Flagge */
+    background-position: 0px center; /* Verschiebung der Flagge nach rechts */
+    border: none;
+    border-radius: 50%; /* Runde Form */
+    cursor: pointer;
+    background-color: #007bff;
+    box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+    transition: all 0.2s;
+
+    display: flex;
+    align-items: center;  /* Vertikale Zentrierung */
+    justify-content: center;  /* Horizontale Zentrierung */
+    color: white;  /* Textfarbe */
+    font-size: 14px; /* Schriftgröße */
+}
+
+.backButton:hover {
+    transform: translateY(-5px);
+}
