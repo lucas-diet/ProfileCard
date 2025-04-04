@@ -26,7 +26,7 @@ function applyLanguage() {
 
         "place": isEnglish ? "Jena, Germany" : "Jena, Deutschland",
         "currentTitle": isEnglish ? "Bioinformatics M. Sc." : "Bioinformatik M. Sc.",
-        "exp": isEnglish ? "Work Experience" : "Berufe",
+        "exp": isEnglish ? "Work Experience" : "Werdegang",
         "contact": isEnglish ? "Email" : "E-Mail",
 
         "educ": isEnglish ? "Education" : "Bildungsweg",
