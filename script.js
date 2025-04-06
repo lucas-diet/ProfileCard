@@ -43,6 +43,7 @@ function applyLanguage() {
         "ba": isEnglish ? "Bachelor thesis": "Bachelorarbeit",
         "pa": isEnglish ? "Project work" : "Projektarbeit",
         "ma": isEnglish ? "Master thesis": "Masterarbeit",
+        "recommendation": isEnglish ? "recommendation": "Empfehlungsschreiben",
 
         "workLine": isEnglish ? "Work Experience" : "Beruflicher Werdegang",
         "jobSpan1": isEnglish ? "Oct/2019 - Jul/2020" : "10.2019 - 07.2020",

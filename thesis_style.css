@@ -119,3 +119,17 @@ body {
 .translateButton:hover {
     transform: translateY(-5px);
 }
+
+.thesis__recommendation {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
