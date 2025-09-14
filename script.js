@@ -53,11 +53,15 @@ function applyLanguage() {
         "mscDate": isEnglish ? "Mar/2025" : "03.2025",
         "msc": isEnglish ? "M. Sc in Bioinformatics" : "M. Sc. in Bioinformatik",
         
+        "thesis_btn": isEnglish ? "Theses": "Abschlussarbeiten",
+        "public_btn": isEnglish ? "Publications": "Publikation",
         "thesis": isEnglish ? "Theses" : "Abschlussarbeiten",
         "ba": isEnglish ? "Bachelor thesis": "Bachelorarbeit",
         "pa": isEnglish ? "Project work" : "Projektarbeit",
         "ma": isEnglish ? "Master thesis": "Masterarbeit",
         "recommendation": isEnglish ? "recommendation": "Empfehlungsschreiben",
+
+        "public": isEnglish ? "Publication": "Publikation",
 
         "workLine": isEnglish ? "Work Experience" : "Beruflicher Werdegang",
         "jobSpan1": isEnglish ? "Oct/2019 - Jul/2020" : "10.2019 - 07.2020",
@@ -91,4 +95,18 @@ function changeLanguage() {
 document.addEventListener("DOMContentLoaded", function () {
     applyLanguage(); 
     document.getElementById("translate").addEventListener("click", changeLanguage);
+});
+
+
+const buttons = document.querySelectorAll(".tab-button");
+const contents = document.querySelectorAll(".tab-content");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+    buttons.forEach(b => b.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    button.classList.add("active");
+    document.getElementById(button.dataset.tab).classList.add("active");
+    });
 });
