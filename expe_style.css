@@ -75,7 +75,7 @@ body {
         & > *:nth-child(1) {
             font-weight: bold;
             letter-spacing: 3px;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             margin-top: 15px;
             margin-bottom: 15px;
             
@@ -86,7 +86,7 @@ body {
             width: 100%;
             justify-content: center; /* Vertikal zentrieren */
             align-items: center; /* Horizontal zentrieren */
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             opacity: 0.7;
         }
     }
@@ -145,4 +145,22 @@ body {
 
 .backButton:hover {
     transform: translateY(-5px);
+}
+
+#jobTitle1 {
+    cursor: pointer;
+}
+
+#jobTitle1:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+#jobTitle2 {
+    cursor: pointer;
+}
+
+#jobTitle2:hover {
+    text-decoration: underline;
+    opacity: 0.8;
 }

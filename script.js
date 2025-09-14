@@ -13,8 +13,22 @@ function currentDate() {
         console.log("Element mit der ID 'currDate' auf dieser Seite nicht gefunden.");
     }
 }
+currentDate();
 
 
+function getCurrentDate(isEnglish) {
+    const date = new Date();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+
+    if (isEnglish) {
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        return `${months[month - 1]}/${year}`;
+    } else {
+        return `${month.toString().padStart(2, "0")}.${year}`;
+    }
+}
 
 
 function applyLanguage() {
@@ -24,7 +38,7 @@ function applyLanguage() {
     const translations = {
         "translate": isEnglish ? "De" : "En",
 
-        "place": isEnglish ? "Jena, Germany" : "Jena, Deutschland",
+        "place": isEnglish ? "Hamburg, Germany" : "Hamburg, Deutschland",
         "currentTitle": isEnglish ? "Bioinformatics M. Sc." : "Bioinformatik M. Sc.",
         "exp": isEnglish ? "Work Experience" : "Werdegang",
         "contact": isEnglish ? "Email" : "E-Mail",
@@ -49,7 +63,12 @@ function applyLanguage() {
         "jobSpan1": isEnglish ? "Oct/2019 - Jul/2020" : "10.2019 - 07.2020",
         "jobTitle1": isEnglish 
             ? "Student Assistant at the Competence & Service Center <br> Friedrich-Schiller-University Jena"
-            : "Studentische Hilfskraft im Kompetenz- & Servicezentrum <br> Friedrich-Schiller-Universität Jena"
+            : "Studentische Hilfskraft im Kompetenz- & Servicezentrum <br> Friedrich-Schiller-Universität Jena",
+
+        "jobSpan2": isEnglish ? `Sep/2025 - ${getCurrentDate(true)}`: `09.2025 - ${getCurrentDate(false)}`,
+        "jobTitle2": isEnglish 
+            ? "Application Developer at the Computing Center <br> University of Technology Hamburg"
+            : "Anwendungsentwickler im Rechenzentrum <br> Technische Universität Hamburg",
     };
 
     // Alle Elemente mit Übersetzungen aktualisieren
@@ -59,14 +78,6 @@ function applyLanguage() {
             element.innerHTML = translations[id]; 
         }
     });
-
-    // Flaggen-Bild anpassen
-    //const translateButton = document.getElementById("translate");
-    //if (translateButton) {
-    //    translateButton.style.backgroundImage = isEnglish 
-    //        ? "url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg')" 
-    //        : "url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg')";
-    //}
 }
 
 function changeLanguage() {
