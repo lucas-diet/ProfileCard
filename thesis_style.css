@@ -198,19 +198,18 @@ body::before {
         text-align: center;
     }
 
-    /* === Hier die Tabs-Anpassung einfügen === */
     .tab-buttons {
-        display: flex;
-        flex-direction: row; /* nebeneinander */
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 200px); /* zwei Buttons, Breite nach Inhalt */
+        justify-content: center; /* zentriert die Buttons */
         gap: 10px;
     }
-
+    
     .tab-button {
-        width: 50%; /* beide Buttons gleich breit */
-        padding: 8px 0; /* vertikales Padding */
+        display: block;
+        width: 100%; /* füllt die Grid-Spalte */
         text-align: center;
-        min-width: unset;
-        flex: unset; /* entfernt flex-Beschränkungen */
+        padding: 10px 15px;
     }
+          
 }
