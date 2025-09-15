@@ -28,7 +28,6 @@ body::before {
     box-shadow: 0 18px 200px -60px black;
     border-radius: 30px;
     width: 640px;
-    max-width: 95%;
     position: relative;
     -webkit-backdrop-filter: blur(5px);
     border: 2px solid #ffffff40;
@@ -36,7 +35,20 @@ body::before {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 2rem;
+      border-radius: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 15px;
+    }
 }
+
 
 .thesis-card__desc {
     text-align: center;
