@@ -5,9 +5,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0 10px;          /* verhindert Abschnitte am Rand */
+    background-color: transparent;
+    box-sizing: border-box;
     position: relative;
-    margin: 0;           /* wichtig */
-    background-color: transparent; /* sicherstellen, dass Hintergrund sichtbar bleibt */
 }
 
 body::before {
@@ -31,7 +33,7 @@ body::before {
     box-shadow: 0 18px 200px -60px black;
     border-radius: 30px;
     width: 640px;
-    max-width: 95%;
+    max-width: 100%;
     position: relative;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -40,9 +42,11 @@ body::before {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: rgba(0,0,0,0.2); /* leicht transparent, sichtbar auf allen Geräten */
+    background-color: rgba(0,0,0,0.4);  /* sichtbar auf allen Geräten */
+    margin: 0 auto;
 }
 
+/* Text */
 .thesis-card__desc {
     text-align: center;
     display: flex;
@@ -55,6 +59,7 @@ body::before {
     font-weight: bold;
 }
 
+/* Info */
 .thesis__info {
     display: flex;
     flex-direction: column;
@@ -82,7 +87,7 @@ body::before {
     opacity: 0.85;
 }
 
-/* Empfehlungsschreiben */
+/* Empfehlung */
 .thesis__recommendation {
     margin-top: 20px;
     padding-top: 15px;
@@ -108,7 +113,7 @@ body::before {
 }
 
 .tab-button {
-    flex: 1; /* gleiche Breite */
+    flex: 1;  /* gleiche Breite */
     padding: 10px 15px;
     border: none;
     background: #ffffff20;
@@ -132,7 +137,7 @@ body::before {
     display: block;
 }
 
-/* Translate Button oben rechts */
+/* Translate Button */
 .translateButton {
     position: fixed;
     z-index: 9999;
@@ -159,17 +164,11 @@ body::before {
 
 /* ===== Mobile Anpassung ===== */
 @media screen and (max-width: 768px) {
-    body {
-        padding: 0 10px;  /* verhindert Abschnitte am Rand */
-        box-sizing: border-box;
-    }
-
     .thesis-card {
         width: 100%;
-        max-width: 100%;
-        padding: 1.5rem 1.5rem;
+        padding: 2rem 1.5rem;
         border-radius: 20px;
-        margin: 0 auto; /* zentriert */
+        margin: 0 auto;
     }
 
     .thesis-card__desc h1 {
@@ -198,18 +197,18 @@ body::before {
         text-align: center;
     }
 
-    /* Tabs auf Handy: Buttons gleiche Breite, zentriert */
+    /* Tabs auf Handy: Buttons gleich breit */
     .tab-buttons {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        justify-content: center;
         width: 100%;
+        justify-content: center;
     }
 
     .tab-button {
         width: 100%;
-        padding: 10px 15px;
+        padding: 12px 15px;
         text-align: center;
     }
 }
