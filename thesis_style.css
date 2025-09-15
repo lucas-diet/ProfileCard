@@ -198,16 +198,19 @@ body::before {
         text-align: center;
     }
 
-    /* Hier neue Anpassung für die Tabs */
+    /* === Hier die Tabs-Anpassung einfügen === */
     .tab-buttons {
-        flex-direction: column; /* Tabs untereinander */
-        align-items: center;    /* zentrieren */
+        display: flex;
+        flex-direction: row; /* nebeneinander */
+        justify-content: center;
+        gap: 10px;
     }
 
     .tab-button {
-        flex: 0 1 auto;     /* natürliche Breite */
-        width: auto;        /* keine volle Breite */
-        min-width: unset;   /* alte Mindestbreite aufheben */
-        padding: 8px 12px;  /* kleineres Padding */
+        width: 50%; /* beide Buttons gleich breit */
+        padding: 8px 0; /* vertikales Padding */
+        text-align: center;
+        min-width: unset;
+        flex: unset; /* entfernt flex-Beschränkungen */
     }
 }
