@@ -3,53 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thesis</title>
-    <link rel="stylesheet" href="thesis_style.css">
+    <title>Thesis</title><link rel="stylesheet" href="thesis_style.css">
     <link rel="stylesheet" href="reset.css">
+    
 </head>
 <body>
     <button class="translateButton" id="translate">En</button>
     <div class="tabs">
-  <div class="tab-buttons">
-    <button class="tab-button active" data-tab="arbeiten" id="thesis_btn">Abschlussarbeiten</button>
-    <button class="tab-button" data-tab="publikationen" id="public_btn">Publikationen</button>
-  </div>
+        <div class="tab-buttons">
+            <button class="tab-button active" data-tab="arbeiten" id="thesis_btn">Abschlussarbeiten</button>
+            <button class="tab-button" data-tab="publikationen" id="public_btn">Publikationen</button>
+        </div>
 
-  <div class="tab-content active" id="arbeiten">
-    <div class="thesis-card">
-      <div class="thesis-card__desc">
-        <h1 id="thesis">Abschlussarbeiten</h1>
-      </div>
-      <div class="thesis__info">
-        <div>
-          <div id="ba">Bachelorarbeit</div>
-          <div id="ba_link"><a href="docs/BA_LucasDietrich.pdf" target="_blank">📄</a></div>
+        <div class="tab-content active" id="arbeiten">
+            <div class="thesis-card">
+                <div class="thesis-card__desc">
+                    <h1 id="thesis">Abschlussarbeiten</h1>
+                </div>
+                <div class="thesis__info">
+                    <div>
+                        <div id="ba">Bachelorarbeit</div>
+                        <div id="ba_link"><a href="docs/BA_LucasDietrich.pdf" target="_blank">📄</a></div>
+                    </div>
+                    <div>
+                        <div id="pa">Projektarbeit</div>
+                        <div id="pa_link"><a href="docs/PA_LucasDietrich.pdf" target="_blank">📄</a></div>
+                    </div>
+                    <div>
+                        <div id="ma">Masterarbeit</div>
+                        <div id="ma_link"><a href="docs/MA_LucasDietrich_digital.pdf" target="_blank">📄</a></div>
+                    </div>
+                    <div class="thesis__recommendation">
+                        <div id="recommendation">Empfehlungsschreiben</div>
+                        <div id="ref_link"><a href="docs/letter-of-recommendation-lucas-dietrich.pdf" target="_blank">📄</a></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-          <div id="pa">Projektarbeit</div>
-          <div id="pa_link"><a href="docs/PA_LucasDietrich.pdf" target="_blank">📄</a></div>
-        </div>
-        <div>
-          <div id="ma">Masterarbeit</div>
-          <div id="ma_link"><a href="docs/MA_LucasDietrich_digital.pdf" target="_blank">📄</a></div>
-        </div>
-        <div class="thesis__recommendation">
-          <div id="recommendation">Empfehlungsschreiben</div>
-          <div id="ref_link"><a href="docs/letter-of-recommendation-lucas-dietrich.pdf" target="_blank">📄</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="tab-content" id="publikationen">
-    <div class="thesis-card">
-      <div class="thesis-card__desc">
-        <h1 id="public">Veröffentlichungen</h1>
-      </div>
-      <!-- deine Publikationen-Links hier -->
+        <div class="tab-content" id="publikationen">
+            <div class="thesis-card">
+                <div class="thesis-card__desc">
+                    <h1 id="public">Veröffentlichungen</h1>
+                </div>
+                <!-- deine Publikationen-Links hier -->
+                <div class="thesis__info">
+                    <div>2025</div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
