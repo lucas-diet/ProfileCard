@@ -119,7 +119,7 @@ body::before {
     background: #ffffff20;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 50px;
     color: white;
     transition: background 0.2s;
     text-align: center;
@@ -207,8 +207,8 @@ body::before {
     }
 
     .tab-button {
-        width: 100%;
-        padding: 12px 15px;
-        text-align: center;
+        width: 100%;        /* ersetzt flex: 1 */
+        padding: 12px 15px; /* überschreibt globales Padding */
     }
 }
+
