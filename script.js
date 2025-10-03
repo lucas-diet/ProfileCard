@@ -40,7 +40,7 @@ function applyLanguage() {
 
         "place": isEnglish ? "Hamburg, Germany" : "Hamburg, Deutschland",
         "currentTitle": isEnglish ? "Bioinformatics M. Sc." : "Bioinformatik M. Sc.",
-        "exp": isEnglish ? "Work Experience" : "Werdegang",
+        "exp": isEnglish ? "Work Experience" : "Beruferfahrung",
         "contact": isEnglish ? "Email" : "E-Mail",
 
         "educ": isEnglish ? "Education" : "Bildungsweg",
