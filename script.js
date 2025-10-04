@@ -63,7 +63,7 @@ function applyLanguage() {
 
         "public": isEnglish ? "Publications": "Veröffentlichungen",
 
-        "workLine": isEnglish ? "Work Experience" : "Beruflicher Werdegang",
+        "workLine": isEnglish ? "Work Experience" : "Berufserfahrung",
         "jobSpan1": isEnglish ? "Oct/2019 - Jul/2020" : "10.2019 - 07.2020",
         "jobTitle1": isEnglish 
             ? "Student Assistant at the Competence & Service Center <br> Friedrich-Schiller-University Jena"
