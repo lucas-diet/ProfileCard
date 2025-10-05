@@ -212,3 +212,30 @@ body::before {
     }
 }
 
+/* Jahr */
+.thesis__info .year {
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+    opacity: 0.85;
+
+}
+
+/* Autoren */
+.thesis__info .authors {
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-transform: none;
+    opacity: 0.85;
+    margin-bottom: 0.25rem; /* enger zum Titel */
+}
+
+/* Titel */
+.thesis__info .title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
