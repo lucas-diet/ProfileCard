@@ -73,14 +73,16 @@ body {
   
     & > div {
       display: flex;
-      flex-direction: row; 
+      flex-direction: column;
       flex-wrap: wrap;
-      justify-content: center;
+      align-items: center;
       text-align: center;
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing: 1px;
       gap: 10px;
+      cursor: default;
+      margin-bottom: 2rem;
       
       & > *:nth-child(1) {
         font-weight: bold;
@@ -92,7 +94,6 @@ body {
       }
   
       & > *:nth-child(2) {
-        display: flex;
         justify-content: center;
         align-items: center;
         font-size: 0.9rem;
@@ -147,12 +148,16 @@ body {
     transform: translateY(-5px);
   }
   
-  #jobTitle1, #jobTitle2 {
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
     cursor: pointer;
   }
   
-  #jobTitle1:hover, #jobTitle2:hover {
+  a:hover {
     text-decoration: underline;
     opacity: 0.8;
   }
+  
   
