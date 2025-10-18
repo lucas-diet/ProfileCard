@@ -66,8 +66,8 @@ function applyLanguage() {
         "workLine": isEnglish ? "Work Experience" : "Berufserfahrung",
         "jobSpan1": isEnglish ? "Oct/2019 - Jul/2020" : "10.2019 - 07.2020",
         "jobTitle1": isEnglish 
-            ? "Student Assistant at the Competence & Service Center <br> Friedrich-Schiller-University Jena"
-            : "Studentische Hilfskraft im Kompetenz- & Servicezentrum <br> Friedrich-Schiller-Universität Jena",
+            ? "Student Assistant at the Competence & <br> Service Center <br> Friedrich-Schiller-University Jena"
+            : "Studentische Hilfskraft im Kompetenz- & <br> Servicezentrum <br> Friedrich-Schiller-Universität Jena",
 
         "jobSpan2": isEnglish ? `Sep/2025 - ${getCurrentDate(true)}`: `09.2025 - ${getCurrentDate(false)}`,
         "jobTitle2": isEnglish 
