@@ -172,7 +172,7 @@ body::before {
     }
 
     .thesis-card__desc h1 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .thesis__info > div {
@@ -182,12 +182,12 @@ body::before {
     }
 
     .thesis__info > div > *:first-child {
-        font-size: 1rem;
+        font-size: 0.9rem;
         letter-spacing: 1px;
     }
 
     .thesis__info > div > *:last-child {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     .thesis__recommendation {
@@ -233,7 +233,7 @@ body::before {
 
 /* Titel */
 .thesis__info .title {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
