@@ -54,14 +54,17 @@ function applyLanguage() {
         "msc": isEnglish ? "M. Sc in Bioinformatics" : "M. Sc. in Bioinformatik",
         
         "thesis_btn": isEnglish ? "Theses": "Abschlussarbeiten",
-        "public_btn": isEnglish ? "Publications": "Veröffentlichungen",
         "thesis": isEnglish ? "Theses" : "Abschlussarbeiten",
         "ba": isEnglish ? "Bachelor thesis": "Bachelorarbeit",
         "pa": isEnglish ? "Project work" : "Projektarbeit",
         "ma": isEnglish ? "Master thesis": "Masterarbeit",
-        "recommendation": isEnglish ? "recommendation": "Empfehlungsschreiben",
 
+        "public_btn": isEnglish ? "Publications": "Veröffentlichungen",
         "public": isEnglish ? "Publications": "Veröffentlichungen",
+
+        "other_btn": isEnglish ? "Other": "Sonstiges",
+        "other": isEnglish ? "Other": "Sonstiges",
+        "recommendation": isEnglish ? "recommendation": "Empfehlungsschreiben",
 
         "workLine": isEnglish ? "Work Experience" : "Berufserfahrung",
         "jobSpan1": isEnglish ? "Oct/2019 - Jul/2020" : "10.2019 - 07.2020",
