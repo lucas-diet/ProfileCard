@@ -116,7 +116,8 @@ body::before {
     flex: 1;  /* gleiche Breite */
     padding: 10px 15px;
     border: none;
-    background: #ffffff20;
+    border: 1px solid #ffffff40;
+    background-color: rgba(0,0,0,0.4); 
     cursor: pointer;
     font-weight: bold;
     border-radius: 50px;
@@ -131,6 +132,11 @@ body::before {
 
 .tab-content {
     display: none;
+}
+
+/* Hover-Effekt */
+.tab-button:hover {
+    transform: translateY(-5px);
 }
 
 .tab-content.active {
