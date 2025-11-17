@@ -135,8 +135,10 @@ body::before {
 }
 
 /* Hover-Effekt */
-.tab-button:hover {
-    transform: translateY(-5px);
+@media (hover: hover) and (pointer: fine) {
+    .tab-button:hover {
+        transform: translateY(-5px);
+    }
 }
 
 .tab-content.active {

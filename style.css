@@ -138,7 +138,7 @@ body {
     }
   }
   
-  @media screen and (min-width: 768px) {
+  @media (hover: hover) and (pointer: fine) {
     .profile-card__social a:hover {
       transform: scale(1.2) translateY(-5px);
     }
@@ -180,7 +180,7 @@ body {
     justify-content: center;
   }
   
-  @media screen and (min-width: 576px) {
+  @media (hover: hover) and (pointer: fine) {
     .profile-card__actions a:hover {
       transform: translateY(-5px);
     }
@@ -201,12 +201,23 @@ body {
   }
   
   .profile-card__actions button.mail {
-    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    background: #007bff;
     box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+
+    padding: 10px 15px;
+    border: none;
+    border: 1px solid #ffffff40;
+    background-color: rgba(0,0,0,0.4); 
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+    color: white;
+    transition: background 0.2s;
+    text-align: center;
   }
   
   .profile-card__actions button.experience {
-    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    background: #007bff;
     box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
   }
   
