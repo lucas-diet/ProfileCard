@@ -203,17 +203,6 @@ body {
   .profile-card__actions button.mail {
     background: #007bff;
     box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
-
-    padding: 10px 15px;
-    border: none;
-    border: 1px solid #ffffff40;
-    background-color: rgba(0,0,0,0.4); 
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 50px;
-    color: white;
-    transition: background 0.2s;
-    text-align: center;
   }
   
   .profile-card__actions button.experience {
