@@ -29,7 +29,7 @@ body::before {
 }
 
 /* ===== Thesis Card ===== */
-.thesis-card {
+.doc-card {
     box-shadow: 0 18px 200px -60px black;
     border-radius: 30px;
     width: 640px;
@@ -47,26 +47,26 @@ body::before {
 }
 
 /* Text */
-.thesis-card__desc {
+.doc-card__desc {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.thesis-card__desc h1 {
+.doc-card__desc h1 {
     font-size: 2rem;
     font-weight: bold;
 }
 
 /* Info */
-.thesis__info {
+.doc__info {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.thesis__info > div {
+.doc__info > div {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -76,13 +76,13 @@ body::before {
     padding: 0.5rem 0;
 }
 
-.thesis__info > div > *:first-child {
+.doc__info > div > *:first-child {
     font-weight: bold;
     font-size: 0.9rem;
     letter-spacing: 2px;
 }
 
-.thesis__info > div > *:last-child {
+.doc__info > div > *:last-child {
     font-size: 0.9rem;
     opacity: 0.85;
 }
@@ -172,29 +172,29 @@ body::before {
 
 /* ===== Mobile Anpassung ===== */
 @media screen and (max-width: 768px) {
-    .thesis-card {
+    .doc-card {
         width: 100%;
         padding: 2rem 1.5rem;
         border-radius: 20px;
         margin: 0 auto;
     }
 
-    .thesis-card__desc h1 {
+    .doc-card__desc h1 {
         font-size: 2rem;
     }
 
-    .thesis__info > div {
+    .doc__info > div {
         flex-direction: column;
         text-align: center;
         gap: 5px;
     }
 
-    .thesis__info > div > *:first-child {
+    .doc__info > div > *:first-child {
         font-size: 0.9rem;
         letter-spacing: 1px;
     }
 
-    .thesis__info > div > *:last-child {
+    .doc__info > div > *:last-child {
         font-size: 0.9rem;
     }
 
@@ -221,7 +221,7 @@ body::before {
 }
 
 /* Jahr */
-.thesis__info .year {
+.doc__info .year {
     font-weight: bold;
     font-size: 0.9rem;
     letter-spacing: 2px;
@@ -231,7 +231,7 @@ body::before {
 }
 
 /* Autoren */
-.thesis__info .authors {
+.doc__info .authors {
     font-size: 0.75rem;
     font-weight: normal;
     text-transform: none;
@@ -240,7 +240,7 @@ body::before {
 }
 
 /* Titel */
-.thesis__info .title {
+.doc__info .title {
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
